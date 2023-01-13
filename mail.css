@@ -1,0 +1,68 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    background-color: black;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    width: 100vw;
+}
+#container{
+    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    row-gap: 7vh;
+    
+}
+#input{
+    height: 6vh;
+    width: min(50vh,50vw);
+    background-color: #3a4452;
+    border-radius: 3vw;
+    font-size: min(5vh,5vw);
+    font-weight: bold;
+    color: white;
+    text-align: center;
+}
+#submit{
+    height: 6vh;
+    width: 25vw;
+    max-width: 600px;
+    max-height: 400px;
+    background-color: #3a4452;
+    font-size: min(4vh,4vw);
+    font-weight: bold;
+    color: white;
+    border-radius: 3vw;
+    cursor: pointer;
+
+}
+#submit:focus{
+    animation-name: big;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate-reverse;
+    animation-timing-function: ease-out;
+
+}
+#Label{
+    color: white;
+    font-size: 6vw;
+    text-align: center;
+    font-weight: bold;
+    padding: 3vh;
+}
+#LabelContainer{
+    display: flex;
+    column-gap: 15vh;
+}
+
+@keyframes big {
+    from{transform: scale(1);}
+    to{transform: scale(1.5);}
+}
